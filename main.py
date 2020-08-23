@@ -51,14 +51,19 @@ cabForCust1 = cabController.findCabForRide(customer1.location)
 
 ride1 = rideController.addRide('ride1', customer1, cabForCust1)
 
+#Check
+cabController.markBooked(cabForCust1.getId())
+
 rideController.startRide('ride1')
 
 cabForCust2 = cabController.findCabForRide(customer2.location)
 
-ride1 = rideController.addRide('ride2', customer1, cabForCust1)
+ride2 = rideController.addRide('ride2', customer2, cabForCust2)
+
+cabController.markBooked(cabForCust2.getId())
 
 rideController.startRide('ride2')
 
 inProgressCount = rideController.findInProgressCount()
 
-print (ride1.customer.name, ride1.cab.reg_no, inProgressCount)
+print (ride1.customer.name, ride1.cab.reg_no, ride2.customer.name, ride2.cab.reg_no, inProgressCount)
