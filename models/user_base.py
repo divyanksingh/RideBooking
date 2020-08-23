@@ -1,9 +1,7 @@
-class User(object):
+class UserBase(object):
   def __init__(self):
     self.id = None
     self.name = None
-    self.location = (0, 0)
-    self.is_driver = False
 
   def setId(self,id):
     self.id = id
@@ -16,9 +14,3 @@ class User(object):
 
   def getName(self):
     return self.name
-
-  def setLocation(self, location):
-    self.location = location
-
-  def getLocation(self):
-    return self.location

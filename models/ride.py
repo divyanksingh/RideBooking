@@ -1,8 +1,9 @@
 class Ride(object):
-  def __init__(self):
-    self.id = None
-    self.rider = None
-    self.driver = None
+  def __init__(self, id, customer, cab, status):
+    self.id = id
+    self.customer = customer
+    self.cab = cab
+    self.status = status
 
   def setId(self, id):
     self.id = id
@@ -10,14 +11,20 @@ class Ride(object):
   def getId(self):
     return self.id
 
-  def setRider(self, rider):
-    self.rider = rider
+  def setCustomer(self, customer):
+    self.customer = customer
 
-  def getRider(self):
-    return self.rider
+  def getCustomer(self):
+    return self.customer
 
-  def setDriver(self, driver):
-    self.driver = driver
+  def setCab(self, cab):
+    self.cab = cab
 
-  def getDriver(self):
-    return self.driver
+  def getCab(self):
+    return self.cab
+
+  def setStatus(self, status):
+    self.status = status
+
+  def getStatus(self):
+    return self.status

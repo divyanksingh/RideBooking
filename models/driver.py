@@ -1,6 +1,12 @@
-from RideBooking.models.user import User
+from RideBooking.models.user_base import UserBase
 
-class Driver(User):
+class Driver(UserBase):
   def __init__(self):
-    super(Driver).__init__()
-    self.is_driver = True
+    super().__init__()
+    self.license_number = None
+
+  def setLicenseNumber(self, license_number):
+    self.license_number = license_number
+
+  def getLicenseNumber(self):
+    return self.license_number

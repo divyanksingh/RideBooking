@@ -5,8 +5,5 @@ class DriverController(object):
   def addDriver(self, id, name):
     return self.driverService.addDriver(id, name)
 
-  def addLocation(self, id, location):
-    return self.driverService.addLocation(id, location)
-
-  def findDriver(self, ride):
-    return self.driverService.getNearestDriver(ride)
+  def addLicense(self, id, license_number):
+    return self.driverService.addLicense(id, license_number)

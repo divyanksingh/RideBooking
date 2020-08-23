@@ -5,9 +5,5 @@ class DriverServiceInterface(metaclass=abc.ABCMeta):
     pass
 
   @abc.abstractmethod
-  def addLocation(self, id, location):
-    pass
-
-  @abc.abstractmethod
-  def getNearestDriver(self, rider):
+  def addLicense(self, id, license_number):
     pass

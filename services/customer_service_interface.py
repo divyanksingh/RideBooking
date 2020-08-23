@@ -1,7 +1,7 @@
 import abc
-class UserServiceInterface(metaclass=abc.ABCMeta):
+class CustomerServiceInterface(metaclass=abc.ABCMeta):
   @abc.abstractmethod
-  def addUser(self, id, name):
+  def addCustomer(self, id, name):
     pass
 
   @abc.abstractmethod
